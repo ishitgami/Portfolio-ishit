@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+    width: 100vw;
+    overflow-x: hidden;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navabar start */
+.navbar{
+    width: 100%;
+    position: absolute;
+    vertical-align: middle;
+    padding: 20px 20px;
+    background-color: rgb(0, 0, 0,0.4);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    vertical-align: middle;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.fixed-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+
+/* home Section start */
+.home-Section {
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.profile {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 8px 2px #302f2f60;
+
+}
+
+.name {
+    margin-top: 7px;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.info {
+    min-height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.social-Link-section {
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.social-icon {
+    padding: 5px;
+    font-size:48px;
+    color: white;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        display: inline-block;
+        text-align: center;
+    }
+}
