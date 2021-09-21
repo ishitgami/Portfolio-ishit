@@ -153,4 +153,17 @@ a{
         display: inline-block;
         text-align: center;
     }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: 0.80rem;
+       
+    }
+
+
+
+
 }
