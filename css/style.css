@@ -152,35 +152,54 @@ a{
 
 /* Skill Section Start */
 .skill-section {
-    background-color: #fff;
+    background-color: rgb(76, 0, 253);
     min-height: 40vh;
     padding-bottom: 50px;
 }
 
 .title {
-    color: black;
+    color: white;
     text-align: center;
     font-size: 50px;
     grid-area: title;
-    margin-top: 30px;
+    padding-top: 30px;
 }
+
 
 .skills{
     margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 0;
 }
-
-
 
 .skill-icon {
     height: 100px;
     width: 100px;
     margin: 10px;
 }
+
+.skill-name {
+    color: black;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.skill-cont {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px 2px #302f2f60;
+    margin: 10px;
+    padding: 2px;
+    transition: all 0.2s linear;
+    
+}
+
+.skill-cont:hover {
+    transform: translateY(-10px);
+}
+
 
 .flutter {
     height: 87px;
@@ -204,5 +223,10 @@ a{
 
     .info {
         font-size: inherit;
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
     }
 }
