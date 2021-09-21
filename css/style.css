@@ -21,8 +21,8 @@ a{
     position: absolute;
     vertical-align: middle;
     padding: 20px 20px;
-    background-color: rgb(0, 0, 0,0.4);
-    backdrop-filter: blur(20px);
+    background-color: rgb(0, 0, 0,0.2);
+    backdrop-filter: blur(100px);
     display: flex;
     justify-content: space-between;
 }
@@ -38,12 +38,12 @@ a{
     font-size: 1.4rem;
 }
 
-.fixed-nav {
+/* .fixed-nav {
     position: fixed;
     left: 0;
     top: 0;
     z-index: 3;
-}
+} */
 
 
 /* home Section start */
@@ -103,6 +103,10 @@ a{
     color: white;
 }
 
+.social-icon:hover {
+    color:black;
+}
+
 .btn-lg {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
@@ -128,6 +132,20 @@ a{
     vertical-align: middle;
     border: 1px solid #ffffff;
     text-decoration: none;
+}
+
+/* Skill Section Start */
+.skill-section {
+    background-color: #fff;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    grid-area: title;
 }
 
 @media only screen and (max-width: 800px) {
